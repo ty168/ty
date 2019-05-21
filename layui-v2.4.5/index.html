@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script type="text/javascript" src="./layui/layui.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- <div  class="layui-container">  
+  常规布局（以中型屏幕桌面为例）：
+  <div  class="layui-row">
+    <div style="height: 30px; background:#ee5de2;" class="layui-col-md9">
+      你的内容 9/12
+    </div>
+    <div style="height: 30px; background:#76f871;" class="layui-col-md3">
+      你的内容 3/12
+    </div>
+  </div>
+</div> -->
+
+<!-- <div style="height: 30px; background:#ee5de2;" class="layui-row">
+  <div style="height: 30px; background:#76f871;" class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+    移动：6/12 | 平板：6/12 | 桌面：4/12
+  </div>
+  <div style="height: 30px; background:#4828d8;" class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+    移动：6/12 | 平板：6/12 | 桌面：4/12
+  </div>
+  <div style="height: 30px; background:#358df1;" class="layui-col-xs4 layui-col-sm12 layui-col-md4">
+    移动：4/12 | 平板：12/12 | 桌面：4/12
+  </div>
+  <div style="height: 30px; background:#7e74b9;" class="layui-col-xs4 layui-col-sm7 layui-col-md8">
+    移动：4/12 | 平板：7/12 | 桌面：8/12
+  </div>
+  <div style="height: 30px; background:#a11e6b;" class="layui-col-xs4 layui-col-sm5 layui-col-md4">
+    移动：4/12 | 平板：5/12 | 桌面：4/12
+  </div>
+</div>
+</div> -->
+
+<!-- <div style="width: 80%; margin:0 auto;" class="layui-row">
+<div style="height: 100px; background:#fc89b5;" class=" layui-col-md9 layui-col-xs6">sad</div>
+<div  style="height: 100px; background:#af37e7;" class="layui-col-md3 layui-col-xs6">asdf</div>
+</div> -->
+
+
+<!-- <div class="layui-fluid">
+    <div style="width: 80%; margin:0 auto;" class="layui-row">
+
+
+        <div style="height: 100px; background:#0f303f;" class=" layui-col-md9  layui-col-xs12">
+         <div class="layui-row">
+                <div style="height: 60px;background:#25a39d;" class="layui-col-md4  layui-col-xs4">
+                内部列
+                </div>
+                <div style="height: 60px;background:#f33b3b;" class="layui-col-md4  layui-col-xs4">
+                  内部列
+                </div>
+                <div style="height: 60px;background:#931bbb;" class="layui-col-md4  layui-col-xs4">
+                    内部列
+                </div>
+
+         </div>
+        </div>
+        <div  style="height: 100px; background:#af37e7;" class="layui-col-md2 layui-col-md-offset1 layui-col-xs12">
+        
+        </div>
+      
+        </div>
+  </div>  -->
+<style>
+#zuo img{
+  margin: 0 40px;
+  margin-top: 8px;
+}
+#zuo a{
+  color: #ffffff;
+  display: block;
+  margin-top: 25px;
+}
+#zhong ul li{
+  float: left;
+  margin: 0 10px;
+  line-height: 73px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fbfbfb;
+}
+#zhong ul li:hover{
+  color: #488cf3;
+  
+}
+#you a {
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin-right: 60px;
+  line-height: 30px;
+  margin-top: 20px;
+  color: #fbfbfb;
+  border-radius:15px; 
+  background-color: #488cf3;
+  text-align: center;
+  float: right;
+}
+#nav img{
+  width: 100%;
+}
+#nav-1{
+  background: rgb(0, 0, 0,0.3);
+  margin-top: -85px;
+  
+}
+
+#nav-1 img{
+  height: 55px;
+  width: 55px;
+}
+#title{
+  margin: 0 auto;
+  width: 60%;
+}
+#pp img span:hover{
+   background: rgb(255, 255, 255,0.3);
+}
+#pp {
+  height: 85px;
+  width: 220px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255,0.3);
+}
+#pp span{
+    font-size: 16px;
+    color: #ffffff;
+}
+#pp:hover{
+ background: rgb(255, 255, 255,0.3);
+ 
+}
+#dd img{
+  width: 185px;
+  height: 85px;
+}
+</style>
+
+
+  <div id="header" class="layui-row" style="height: 73px; width:100%; background:#262626;">
+     
+     
+        <div id="zuo" class="layui-hide-xs layui-col-md3 layui-col-xs3 layui-col-sm3 " >
+            <img src="./layui/images/logo2.png">
+
+          </div>
+          <div id="zuo" class="layui-hide-md layui-col-md6 layui-col-xs6 layui-col-sm6 " >
+            <a href="">白鹭科技</a>
+            
+          </div>
+          
+
+          <div id="zhong" class="layui-hide-xs layui-col-md7 layui-col-xs7 layui-col-sm7" >
+        
+            <ul>
+              <li>首页</li>
+              <li>产品</li>
+              <li>解决方案</li>
+              <li>开发者中心</li>
+              <li>案例</li>
+              <li>众包平台</li>
+              <li>教育</li>
+              <li>区块链实验室</li>
+              <li>社区</li>
+              <li>关于我们</li>
+            </ul>
+      
+            
+
+
+          </div>
+            <div id="you" class="layui-hide-xs layui-col-md2 layui-col-xs2 layui-col-sm2" style=" height:73px;" >
+               <a href="">EN</a>
+              </div>
+              <div id="you" class=" layui-hide-md layui-col-md6 layui-col-xs6 layui-col-sm6" style=" height:73px;" >
+                
+                <a href="">EN</a>
+               </div>
+
+  </div>
+  <div id="nav"  class="layui-row">
+      <div class="layui-col-md12">
+        
+          <img src="./layui/images/kv3.jpg" alt="">
+         
+          <div id="nav-1" class="layui-fluid layui-hide-xs" style="height:85px;">
+
+            <div id="title" class="layui-row">
+              
+              <div id="pp" class="layui-col-md3">
+                  <img src="./layui/images/bottom1.png" alt="">
+                  <span>白鹭科技优势</span>
+              </div>
+              <div id="pp" class="layui-col-md3">
+                  <img src="./layui/images/bottom1.png" alt="">
+                  <span>白鹭引擎服务</span>
+              </div>
+              <div id="pp" class="layui-col-md3">
+                  <img src="./layui/images/bottom1.png" alt="">
+                  <span>游戏案例精选</span>
+              </div>
+              <div id="pp" class="layui-col-md3">
+                  <img src="./layui/images/bottom1.png" alt="">
+                  <span>开发者快速入门</span>
+              </div>
+              
+            </div>
+             
+         
+           </div>
+       </div>
+  
+        
+   </div>
+
+
+
+<div id="footer_1" class="layui-fluid layui-hide-xs" style="background: #ecc3c3;height:400px;width:100%;">
+    <div id="title" >
+        <img src="./layui/images/pen (1).png" alt="" style="width: 20px; height:25px;margin:35px 13px 44px -58px;">
+     
+        <span style="font-size: 28px;">合作伙伴</span>
+      </div>
+    <div id="tu" class="layui-row" style="margin: 0 auto;width: 70%;">
+        
+      <div id="dd" class="layui-col-md2">
+        <img src="./layui/images/google (1).png" alt="">
+      </div>
+      <div id="dd" class="layui-col-md2">
+        <img src="./layui/images/appleB.png" alt="">
+      </div>
+      <div id="dd" class="layui-col-md2">
+        <img src="./layui/images/ms (1).png" alt="">
+      </div>
+      <div id="dd" class="layui-col-md2">
+          <img src="./layui/images/tc (1).png" alt="">
+      </div>
+      <div id="dd" class="layui-col-md2">
+          <img src="./layui/images/mi (1).png" alt="">
+      </div>
+      <div id="dd" class="layui-col-md2">
+          <img src="./layui/images/we (1).png" alt="">
+      </div>
+
+    </div>
+    <div id="tu" class="layui-row" style=" margin: 0 auto;width: 70%;">
+      
+        <div id="dd" class="layui-col-md2">
+          <img src="./layui/images/k (1).png" alt="">
+        </div>
+        <div id="dd" class="layui-col-md2">
+          <img src="./layui/images/apus (1).png" alt="">
+        </div>
+        <div id="dd" class="layui-col-md2">
+          <img src="./layui/images/fbc.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+        </div>
+        <div id="dd" class="layui-col-md2">
+            <img src="./layui/images/tap (1).png" alt="">
+        </div>
+        <div id="dd" class="layui-col-md2">
+            <img src="./layui/images/yz (1).png" alt="">
+        </div>
+        <div id="dd" class="layui-col-md2">
+            <img src="./layui/images/cu.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+        </div>
+  
+      </div>
+      <div id="tu" class="layui-row" style="margin: 0 auto;width: 70%;">
+          <div id="dd" class="layui-col-md2">
+            <img src="./layui/images/kun (1).png" alt="">
+          </div>
+          <div id="dd" class="layui-col-md2">
+            <img src="./layui/images/360.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+          </div>
+          <div id="dd" class="layui-col-md2">
+            <img src="./layui/images/lie.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+          </div>
+          <div id="dd" class="layui-col-md2">
+              <img src="./layui/images/ya.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+          </div>
+          <div id="dd" class="layui-col-md2">
+              <img src="./layui/images/baidu.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+          </div>
+          <div id="dd" class="layui-col-md2">
+              <img src="./layui/images/oppo.png" alt="" style=" width: 155px;height: 55px;margin-left: 15px; margin-top: 15px;">
+          </div>
+    
+        </div>
+
+</div>
+
+
+
+
+<div id="footer_1" class="layui-fluid layui-hide-md" style=";height:400px;">
+  <div id="title" >
+      <img src="./layui/images/pen (1).png" alt="" style="width: 20px; height:25px;margin:35px 13px 44px -58px;">
+   
+      <span style="font-size: 28px;">合作伙伴</span>
+    </div>
+  <div id="tu" class="layui-row">
+    <div class="layui-col-xs4" style="background: #488cf3;height: 30px;"></div>
+    <div  class="layui-col-xs4" style="background: #6b7585;height: 30px;"></div>
+    <div  class="layui-col-xs4" style="background: #488cf3;height: 30px;"></div>
+      
+  
+    
+  
+
+  </div>
+
+</div>
+  
+    </body>
+    </html>
